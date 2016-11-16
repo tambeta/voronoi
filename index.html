@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+<title>canvas</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="voronoi.css" />
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="sylvester.js"></script>
+<script type="text/javascript" src="cconvert.js"></script>
+<script type="text/javascript" src="classes.js"></script>
+<script type="text/javascript" src="voronoi.js"></script>
+</head>
+
+<body>
+
+	<h1>Voronoi diagram</h1>
+
+	<div class="container">
+		<canvas id="thecanvas" width="800" height="600" style="border: #ccc dashed 1px;">
+		no canvas
+		</canvas>
+
+		<br/><br/>
+
+		<form id="theform">
+			<div class="box">
+			<input type="checkbox" checked id="b_delaunay" /> Delaunay triangulation<br/>
+			<input type="checkbox" checked id="b_voronoi" /> Voronoi diagram<br/>
+			<input type="checkbox" id="b_dt_on_top" /> Draw triangulation on top of V. diagram<br/>
+			</div>
+
+			<div class="box">
+			<input type="text" size="4" value="10" id="n" /> Number of points (3-100)<br/>
+			<input type="text" size="4" value="0.2" id="alpha" /> Alpha value (0-1)<br/>
+			<input type="text" size="4" value="800" id="width" /> Width<br/>
+			<input type="text" size="4" value="600" id="height" /> Height<br/>
+			</div>
+		</form>
+
+		<div class="box" style="clear:both;">
+		<a href="#" onclick="generate();">Regenerate</a> |
+		<a href="#" onclick="reset();">Reset</a>
+		</div>
+
+	</div>
+</body>
+</html>

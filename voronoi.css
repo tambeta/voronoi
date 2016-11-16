@@ -1,0 +1,30 @@
+
+html {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {	
+	padding: 10px;
+	background-color: white;
+	font-family: "bitstream vera sans", "Verdana", "Arial", sans-serif;
+	color: #446;	
+}
+
+.container {
+	float: left;
+	clear: both;
+	/*min-width: 850px;	*/
+	
+	padding: 20px;	
+	background-color: #f2fff2;
+}
+
+.box {
+	float: left;
+	padding-right: 10px;
+}
+
+canvas {
+	background-color: white;
+}
